@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Checkout Page</title> </head> <body>
+<h1>Checkout</h1>
+
+<p>
+    Please check your products and enter your details below to complete
+    your order.
+</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt40Tazmihodx4fePrGlSSTHeAcH34X1i-3qztGwRXA5Jfw22k3k5ntnrp&s=10" alt="Online Store" width="300">
+
+<h2>Selected Products</h2>
+
+<table border="1">
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td>Wireless Headphones</td>
+        <td>1</td>
+        <td>₹2499</td>
+        <td>₹2499</td>
+    </tr>
+
+    <tr>
+        <td>Smart Watch</td>
+        <td>2</td>
+        <td>₹1999</td>
+        <td>₹3998</td>
+    </tr>
+
+    <tr>
+        <td>USB Cable</td>
+        <td>3</td>
+        <td>₹499</td>
+        <td>₹1497</td>
+    </tr>
+</table>
+
+<h2>Customer Information</h2>
+
+<form>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="tel" name="mobile" placeholder="Enter 10 digit number"
+           pattern="[0-9]{10}" required>
+    <br><br>
+
+    <h2>Delivery Address</h2>
+
+    <label>House / Street:</label><br>
+    <input type="text" name="address" placeholder="Enter your address" required>
+    <br><br>
+
+    <label>City:</label><br>
+    <input type="text" name="city" placeholder="Enter city" required>
+    <br><br>
+
+    <label>State:</label><br>
+    <select name="state" required>
+        <option value="">Select State</option>
+        <option value="up">Uttar Pradesh</option>
+        <option value="delhi">Delhi</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="gujarat">Gujarat</option>
+    </select>
+    <br><br>
+
+    <label>Postal Code:</label><br>
+    <input type="text" name="postal" placeholder="6 digit postal code"
+           pattern="[0-9]{6}" required>
+    <br><br>
+
+    <label>Country:</label><br>
+    <select name="country" required>
+        <option value="">Select Country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select>
+    <br><br>
+
+    <h2>Delivery Method</h2>
+
+    <input type="radio" name="delivery" value="standard" required>
+    Standard Delivery
+    <br>
+
+    <input type="radio" name="delivery" value="express">
+    Express Delivery
+    <br>
+
+    <input type="radio" name="delivery" value="same_day">
+    Same Day Delivery
+    <br><br>
+
+    <h2>Payment Method</h2>
+
+    <input type="radio" name="payment" value="card" required>
+    Card
+    <br>
+
+    <input type="radio" name="payment" value="cod">
+    Cash on Delivery
+    <br>
+
+    <input type="radio" name="payment" value="upi">
+    UPI / Online Payment
+    <br><br>
+
+    <h3>Card Details</h3>
+
+    <label>Card Holder Name:</label><br>
+    <input type="text" name="card_name" placeholder="Name on card">
+    <br><br>
+
+    <label>Card Number:</label><br>
+    <input type="text" name="card_number"
+           placeholder="16 digit card number"
+           maxlength="16">
+    <br><br>
+
+    <label>Expiry Date:</label><br>
+    <input type="month" name="expiry">
+    <br><br>
+
+    <label>Security Code:</label><br>
+    <input type="password" name="cvv"
+           placeholder="3 digit CVV"
+           maxlength="3">
+    <br><br>
+
+    <h2>Billing Address</h2>
+
+    <input type="checkbox" name="billing" value="same">
+    Billing address is same as delivery address
+    <br><br>
+
+    <h2>Delivery Instructions</h2>
+
+    <textarea name="instructions"
+              rows="5"
+              cols="40"
+              placeholder="Enter delivery instructions"></textarea>
+    <br><br>
+
+    <h2>Coupon Code</h2>
+
+    <label>Promo Code (Optional):</label><br>
+    <input type="text" name="coupon"
+           placeholder="Enter coupon code"
+           maxlength="20">
+    <br><br>
+
+    <h2>Confirmation</h2>
+
+    <input type="checkbox" name="terms" value="yes" required>
+    I agree to the <a href="terms.html">Terms & Conditions</a>.
+    <br><br>
+
+    <input type="checkbox" name="confirm" value="yes" required>
+    I confirm that my order details are correct.
+    <br><br>
+
+    <input type="submit" value="Place Order">
+    <input type="reset" value="Reset">
+
+</form>
+
+<br>
+
+<a href="https://www.amazon.in">Continue Shopping</a>
+
+</body> </html>

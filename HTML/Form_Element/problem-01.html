@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>College Admission Application Form</title>
+    </head>
+    <body>
+        <h1>Welcome to GLA University!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPEh9H4cOcGb5J5GGlf8iyQhd3mo8lWgw0e52rFeQcZQ&s=10" alt="GLA University Logo">
+        <h2>College Admission Application Form</h2>
+        <p>We are pleased that you are interested in joining our college. Please fill out the admission application form carefully and provide correct and complete information <em>as per your issued govt. Id proof</em></p>
+        <hr>
+        <h3>Please fill out this application form</h3>
+        <form>
+            <label for="Name">Enter full name</label>
+            <input type="text" required placeholder="Name">
+            <br><label for="Date Of Birth">Date of Birth</label>
+            <input type="Date" required>
+            <br><label for="Mobile Number">Student's Mobile Number</label>
+            <input type="tel" placeholder="Enter 10 digit Mobile Number" 
+            pattern="[6-9][0-9]{9}" 
+            maxlength="10" required>
+            <br><label for="E-mail">Student's Email-id</label>
+            <input type="email" required placeholder="example@gmail.com">
+            <br><label for="Address">Permanent Address</label>
+            <input type="text" required placeholder="E.g.Knowledge Park, Greater Noida">
+            <br><label>Gender:</label>
+            <input type="radio" name="gender" value="m">Male
+            <input type="radio" name="gender" id="f">Female
+            <br><label for="Password">Create a Password</label>
+            <input type="password" placeholder="Make strong password" required>
+            <br><label for="PIN">Create a PIN</label>
+            <input type="password" placeholder="PIN" pattern="[5-9][0-9]{3}" required maxlength="4">
+        </form>
+        <h3>Academic Details</h3>
+        <H4>10<sup>th</sup> details
+        </H4>
+        <form>
+            <label for="Passing year">Passing year</label>
+            <input type="tel" placeholder="Year"
+            pattern="[2][0][1-2][0-9]{1}"
+            maxlength="4" required>
+            <label for="Marks">Marks Obtained</label>
+            <input type="number" required>
+            <label for="School">School Name and Address</label>
+            <input type="text" required>
+            <label for="Board">Board</label>
+            <input type="text" type="text">
+        </form>
+        <h4>12<sup>th</sup> details</h4>
+        <form>
+            <label for="Passing year">Passing year</label>
+            <input type="number" placeholder="Year" 
+            pattern="[2][0][1-2][0-9]{1}"
+            maxlength="4" required>
+            <label for="Marks">Marks Obtained</label>
+            <input type="number" required>
+            <label for="School">School Name and Address</label>
+            <input type="text" required>
+            <label for="Board">Board</label>
+            <input type="text" type="text">
+        </form>
+        <h4>Document Upload</h4>
+        <form>
+            <label for="Aadhar Card">Aadhar Card</label>
+            <input type="file" name="document" id="document" accept=".pdf" required>
+            <label for="10th marksheet">10<sup>th</sup> marksheet</label>
+            <input type="file" id="document" name="document" accept=".jpg, .pdf" required>
+            <label for="12th marksheet">12<sup>th</sup> markseet</label>
+            <input type="file" id="document" name="document" accept=".jpg, .pdf" required>
+        </form>
+        <h4>Course Selection</h4>
+         <label for="Course">Select Desire course</label>
+         <select id="option" name="course" required>
+         <option value="B.Tech">B.Tech</option>
+         <option value="M.Tech">M.Tech</option>
+         <option value="B.Sc.">B.Sc.</option>
+         <option value="BCA">BCA</option>
+         <option value="BBA">BBA</option>
+         <option value="MCA">MCA</option>
+         <option value="MBA">MBA</option>
+         </select>
+         <br><label><input type="checkbox">I agree to terms and conditions</label>
+         <br><input type="submit" value="Book Appointment">
+
+        <input type="reset" value="Reset">
+
+    </body>
+</html

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Enrollment Form</title>
+</head>
+<body> 
+    <h1>COURSE ENROLLMENT</h1>
+    <p>Welcome to our Course Enrollment Portal. Choose a course, select your preferred batch and learning mode, and provide your details to enroll in your desired program.
+    <br>Please fill in all the required information carefully before submitting the enrollment form.
+        </p>
+    <hr>
+    <h2>Learn. Practice. Build. Grow.</h2>
+    <img src="https://media.licdn.com/dms/image/v2/D5612AQE4_rPgqnRZfQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1692670547490?e=2147483647&v=beta&t=1T2148xHxmYo74bZ84zS5u5DglrBFcPWAZEmFs_Oe7U" alt="Course Enrollment" width="400" height="200">
+    <br>For more information about our courses:
+        <a href="https://docs.moodle.org/502/en/Course_enrolment">View Course Information</a>
+    </p>
+    <hr>
+    <h2>Student Enrollment Form</h2>
+    <form>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="student_name" placeholder="Enter your full name" required>
+        <br><label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com"
+            maxlength="100" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password"
+            minlength="8" required>
+        <br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile_number" placeholder="Enter 10-digit mobile number"
+            pattern="[6-9][0-9]{9}"
+            minlength="10"
+            maxlength="10"
+            required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date"
+            min="1990-01-01"
+            max="2026-08-31"
+            required>
+        <br>
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <option value="java">Java Programming</option>
+        <option value="python">Python Programming</option>
+        <option value="web_development">Web Development</option>
+        <option value="data_structures">Data Structures & Algorithms</option>
+        <option value="database">Database Management</option>
+        <option value="machine_learning">Machine Learning</option>
+        </select>
+        <br>
+        <label for="batch">Select Batch / Session:</label>
+        <select id="batch" name="batch_session" required>
+        <option value="morning_9">Morning - 9:00 AM to 11:00 AM</option>
+        <option value="afternoon_2">Afternoon - 2:00 PM to 4:00 PM</option>
+        <option value="evening_5">Evening - 5:00 PM to 7:00 PM</option>
+        <option value="evening_7">Evening - 7:00 PM to 9:00 PM</option>
+        <option value="weekend">Weekend Batch</option>
+        </select>
+
+        <br>
+        <fieldset>
+        <label for="Preference">Preferred Learning method</label>
+           <br> <input type="radio" id="online" name="learning_mode">Online
+            <br><input type="radio" id="offline" name="learning_mode">Offline
+            <br><input type="radio" id="hybrid" name="learning_mode">Hybrid
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="Area of interest">Area of Interest</label>
+            <br><input type="checkbox" name="java" id="interest">Java
+            <br><input type="checkbox" name="java" id="interest">Python
+            <br><input type="checkbox" name="java" id="interest">Web Development
+            <br><input type="checkbox" name="java" id="interest">Data Structures
+            <br><input type="checkbox" name="java" id="interest">Databases
+        </fieldset>
+
+        <br>
+        <label for="education">Education Level:</label>
+        <select id="education" name="education_level" required>
+            <option value="12th">12th / Higher Secondary</option>
+            <option value="diploma">Diploma</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br>
+        <label for="college">College / Institution:</label>
+        <input type="text" id="college" name="college_institution" placeholder="Enter your college/institution" required>
+
+        <br>
+        <label for="semester">Current Semester / Year:</label>
+        <input type="text" id="semester" name="current_semester_year" placeholder="Example: 3rd Semester" required>
+
+        <br>
+        <label for="experience">
+            Programming Experience (in years):
+        </label>
+        <input type="number" id="experience" name="programming_experience" value="0" required>
+
+        <br>
+        <label for="portfolio">
+            GitHub / Portfolio URL (Optional):
+        </label>
+        <input type="url" id="portfolio" name="github_portfolio" placeholder="https://github.com/username"maxlength="200">
+
+        <br>
+        <label for="goals">Learning Goals:</label>
+        <br>
+        <textarea id="goals" name="learning_goals" rows="6" cols="50"
+            placeholder="Tell us what you want to learn from this course..."
+            minlength="10"
+            maxlength="500"
+            required
+        ></textarea>
+
+        <br>
+        <input type="checkbox" id="confirmation" name="enrollment_confirmation" required>
+        <label for="confirmation">I confirm that the information provided by me is correct and I agree to the course enrollment terms.
+        </label>
+        <br>
+        <input type="submit" value="Submit Enrollment">
+        <input type="reset" value="Reset Form">
+    </form>
+    <hr>
+    <p>Thank you for choosing our learning program!</p>
+
+</body>
+</html>

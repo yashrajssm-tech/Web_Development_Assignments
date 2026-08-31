@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Hopital Admit Form</title>
+    </head>
+    <body>
+        <h1>Clinic Appointment Booking</h1>
+        <p>Welcome to our clinic appointment booking page. Please enter your details and select your preferred doctor, appointment date, time, and visit type.
+        </p>
+        <h2>Clinic Timings</h2>
+        <table border=1 cellpadding="7">
+            <tr>
+                <th>Day</th>
+                <th>Opening Time</th>
+                <th>Closing Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>9:00 AM</td>
+                <td>3:00 PM</td>
+            </tr>
+        </table>
+        <h2>Please fill this form</h2>
+        <form>
+            <label for="Name">Patient's Name</label>
+            <input type="text" required>
+            <br><label for="email">E-mail</label>
+            <input type="email" required>
+            <br>
+            <label for="Mobile">Mobile Number</label>
+            <input type="tel" placeholder="10 digit mobile number"
+            pattern="[6-9][0-9]{9}" 
+            maxlength="10"
+            minlength="10" required>
+            <br>
+            <label for="DOB">Date of birth</label>
+            <input type="date" required>
+            <br>
+            <label for="Patient Id">Patient Id (optional)</label>
+            <input type="text" name="id" id="id">
+            <br>
+            <label for="Gender">Gender</label>
+            <input type="radio" name="gender" id="m">Male
+            <input type="radio" name="gender" id="f">Female
+            <br>
+            <label for="Doctor">Select Doctor</label>
+            <select id="Doctor" name="Doctor">
+            <option value="A">Dr. Shashi Shekhar - Cardiologist</option>
+            <option value="B">Dr. Prabhat Ranjan - Dermatologist</option>
+            <option value="C">Dr. Girish Mishra - Physician</option>
+            <option value="D">Dr. Meenakshi Dutt - Orthopedic Specialist</option>
+            <option value="E">Dr. Amrit Vikas - Pediatrician</option>
+            <option value="F">Dr. K.N. Tiwari - Ophthalmologist</option>
+            </select>
+            <br>
+            <label for="Appointment">Appointment Date</label>
+            <input type="date" required>
+            <br>
+            <label for="Time Slot">Time Slot</label>
+            <input type="time" date>
+            <br>
+            <fieldset>
+                <label for="Visit">Visit Type</label>
+                <br><input type="radio" name="visit" id="visit">New Patient
+                <br><input type="radio" name="visit" id="visit">Follow-up
+                <br><input type="radio" name="visit" id="visit">Consultation
+                <br><input type="radio" name="visit" id="visit">Emergency
+            </fieldset>
+            <br><label for="Preference">Preferred Communication Method</label>
+            <br><input type="radio" name="method" type="method">Phone Call
+            <br><input type="radio" name="method" type="method">E-Mail 
+            <br><input type="radio" name="method" type="method">SMS
+            <br>
+            <label for="Reason"><b>Reason for visit/Additional Information</b></label>
+            <input type="text" required>
+            <br><input type="checkbox" required>
+            <label for="Agreement">I agree for the terms and policies</label>
+            <br><input type="submit" Value="Book Appointment" required>
+        </form>
+    </body>
